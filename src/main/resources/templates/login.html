@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <title>欢迎登陆</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+
+</head>
+<body>
+<div class="container">
+
+    <form  class="form-signin" action="login" method="post">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="name" class="sr-only">Email address</label>
+        <input type="email" name="name" id="name" class="form-control" placeholder="名字" >
+        <label for="id" class="sr-only">Password</label>
+        <input type="password" name="id" id="id" class="form-control" placeholder="密码" >
+        <label for="age" class="sr-only">Email address</label>
+        <input type="email"  name="age" id="age" class="form-control" placeholder="年龄" >
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button type="submit">Sign in</button>
+    </form>
+
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+</body>
+</html>
